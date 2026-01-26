@@ -5,7 +5,7 @@ sidebar:
   order: 2
 ---
 
-seedcli v2 is designed with **extensibility** as the core principle. Every major component is defined by interfaces, allowing easy replacement, extension, and community contributions.
+seedcli  is designed with **extensibility** as the core principle. Every major component is defined by interfaces, allowing easy replacement, extension, and community contributions.
 
 ## System Overview
 

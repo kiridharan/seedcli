@@ -1,4 +1,4 @@
-# DocKit
+# SeedCLI
 
 [![Built with Starlight](https://astro.badg.es/v2/built-with-starlight/tiny.svg)](https://starlight.astro.build)
 
@@ -12,8 +12,8 @@ First, clone the repository and install dependencies:
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/dockit-astro.git
-cd dockit-astro
+git clone https://github.com/kiridharan/seedcli.git
+cd seedcli
 
 # Install dependencies
 yarn install
@@ -109,7 +109,7 @@ Edit `src/config/sidebar.json` to add navigation with icons:
 
 ### Step 5: Use Custom Components in Your Documentation
 
-Create rich documentation using DocKit's custom components:
+Create rich documentation using seedcli's custom components:
 
 ```mdx
 ---
@@ -281,7 +281,7 @@ yarn preview
 │   ├── assets/                # Images and media
 │   ├── components/
 │   │   ├── override-components/    # Enhanced Starlight components
-│   │   └── user-components/        # Custom DocKit components
+│   │   └── user-components/        # Custom SeedCLI components
 │   ├── config/                # Configuration files
 │   │   ├── config.json        # Site settings
 │   │   ├── theme.json         # Theme customization

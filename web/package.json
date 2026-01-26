@@ -1,7 +1,7 @@
 {
-  "name": "dockit-astro",
+  "name": "seedcli-astro",
   "version": "0.0.2",
-  "description": "DocKit Astro is a simple, modern documentation theme built using Astro and Tailwind CSS",
+  "description": "Seedcli Astro is a simple, modern documentation theme built using Astro and Tailwind CSS",
   "author": "Themefisher",
   "license": "MIT",
   "type": "module",
