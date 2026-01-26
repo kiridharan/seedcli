@@ -1,0 +1,29 @@
+{
+  "site": {
+    "title": "seedcli",
+    "logo": "/src/assets/logo-light.svg",
+    "logo_darkmode": "/src/assets/logo-dark.svg",
+    "logo_width": "127",
+    "logo_height": "32",
+    "logo_text": "seedcli"
+  },
+
+  "settings": {
+    "search": true,
+    "theme_switcher": true
+  },
+
+  "params": {
+    "footer_contact": {
+      "enable": false,
+      "action": "#"
+    },
+    "copyright": "Developed by <a class=\"text-primary hover:underline no-underline\" href=\"https://github.com/kiridharan/seedcli\" target=\"_blank\" rel=\"noopener\" aria-label=\"seedcli\">seedcli</a> Copyright &copy; 2026."
+  },
+
+  "navigation_button": {
+    "enable": true,
+    "label": "Get Started",
+    "link": "/getting-started/installation/"
+  }
+}

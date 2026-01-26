@@ -1,0 +1,73 @@
+{
+  "main": [
+    {
+      "name": "Home",
+      "url": "/"
+    },
+    {
+      "name": "Documentation",
+      "url": "/getting-started/installation/"
+    },
+    {
+      "name": "GitHub",
+      "url": "https://github.com/kiridharan/seedcli"
+    }
+  ],
+  "footer": {
+    "community": {
+      "title": "Community",
+      "links": [
+        {
+          "name": "GitHub",
+          "url": "https://github.com/kiridharan/seedcli"
+        },
+        {
+          "name": "Discussions",
+          "url": "https://github.com/kiridharan/seedcli/discussions"
+        },
+        {
+          "name": "Issues",
+          "url": "https://github.com/kiridharan/seedcli/issues"
+        }
+      ]
+    },
+    "help_links": {
+      "title": "Documentation",
+      "links": [
+        {
+          "name": "Getting Started",
+          "url": "/getting-started/installation/"
+        },
+        {
+          "name": "Configuration",
+          "url": "/guide/configuration/"
+        },
+        {
+          "name": "CLI Reference",
+          "url": "/reference/cli/"
+        },
+        {
+          "name": "Examples",
+          "url": "/reference/examples/"
+        }
+      ]
+    },
+    "company": {
+      "title": "Resources",
+      "links": [
+        {
+          "name": "Architecture",
+          "url": "/guide/architecture/"
+        },
+        {
+          "name": "Data Generation",
+          "url": "/guide/data-generation/"
+        },
+        {
+          "name": "Extending seedcli",
+          "url": "/guide/extending/"
+        }
+      ]
+    }
+  }
+}

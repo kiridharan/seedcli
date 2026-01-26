@@ -1,0 +1,55 @@
+{
+  "main": [
+    {
+      "label": "Getting Started",
+      "items": [
+        {
+          "label": "[lucide:rocket] Installation",
+          "slug": "getting-started/installation"
+        },
+        {
+          "label": "[lucide:play] Quick Start",
+          "slug": "getting-started/quickstart"
+        }
+      ]
+    },
+    {
+      "label": "Guide",
+      "items": [
+        {
+          "label": "[lucide:settings] Configuration",
+          "slug": "guide/configuration"
+        },
+        {
+          "label": "[lucide:layers] Architecture",
+          "slug": "guide/architecture"
+        },
+        {
+          "label": "[lucide:wand-2] Data Generation",
+          "slug": "guide/data-generation"
+        },
+        {
+          "label": "[lucide:puzzle] Extending",
+          "slug": "guide/extending"
+        }
+      ]
+    },
+    {
+      "label": "Reference",
+      "items": [
+        {
+          "label": "[lucide:terminal] CLI Commands",
+          "slug": "reference/cli"
+        },
+        {
+          "label": "[lucide:file-cog] Configuration",
+          "slug": "reference/configuration"
+        },
+        {
+          "label": "[lucide:book-open] Examples",
+          "slug": "reference/examples"
+        }
+      ]
+    }
+  ]
+}

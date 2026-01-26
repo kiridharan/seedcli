@@ -1,0 +1,41 @@
+# Binaries
+seedcli
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary
+*.test
+
+# Output of the go coverage tool
+*.out
+
+# Dependency directories
+vendor/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+# TEST DB
+*.sql
+
+# Config
+.seedfake
+
+# OS
+.DS_Store
+
+.SeederConfig
+.seedfake
+
+/web/src/content/i18n

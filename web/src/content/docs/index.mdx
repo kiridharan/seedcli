@@ -1,0 +1,132 @@
+---
+title: seedcli - Intelligent Database Seeding
+description: Instantly populate your PostgreSQL and SQLite databases with intelligent, contextual fake data using our powerful CLI tool.
+template: splash
+hero:
+  title: |
+    Seed your database with
+    <span class="light-text">intelligent fake data</span>
+  tagline: Stop writing tedious test data scripts. seedcli automatically generates contextual, constraint-aware fake data for PostgreSQL and SQLite in seconds.
+---
+
+import Section from "~/components/Section.astro";
+import Card from "~/components/user-components/NewCard.astro";
+import Grid from "~/components/user-components/Grid.astro";
+
+<Section title="Intelligent features
+<span class='light-text'>that just work</span>" description="Built for developers who need realistic test data without the hassle.">
+
+<Grid columns={4}>
+  <Card title="Context-aware data" icon="lucide:brain" iconColor="#FF8585">
+    Automatically generates realistic data based on column names - emails, phones, addresses, and more.
+  </Card>
+  <Card title="Lightning fast" icon="lucide:zap" iconColor="#7BE1A4">
+    Batch insertion with configurable sizes. Seed thousands of rows in seconds with intelligent performance optimization.
+  </Card>
+
+<Card title="Smart dependencies" icon="lucide:git-fork" iconColor="#FFD97B">
+  Topological sorting automatically handles foreign keys and complex table relationships.
+</Card>
+<Card title="Constraint-aware" icon="lucide:shield-check" iconColor="#979BFF">
+  Respects UNIQUE, NOT NULL, ENUMs, and default values without manual configuration.
+</Card>
+
+</Grid>
+</Section>
+
+<Section title="Extensible <span class='light-text'>Architecture</span>" description="Built with interfaces for easy customization and community plugins.">
+
+<Grid columns={3}>
+  <Card title="Plugin System" icon="lucide:plug" iconColor="#FF8585">
+    Hook into the seeding lifecycle with BeforeSeed, AfterSeed, and OnError hooks.
+  </Card>
+  <Card title="Custom Generators" icon="lucide:wand-2" iconColor="#7BE1A4">
+    Register your own data generators for domain-specific data like credit cards or SKUs.
+  </Card>
+  <Card title="Multiple Adapters" icon="lucide:database" iconColor="#979BFF">
+    PostgreSQL and SQLite built-in. Easy to add MySQL, MongoDB, and more.
+  </Card>
+</Grid>
+
+</Section>
+
+import HeroTabs from "~/components/HeroTabs.astro";
+import HeroTabsItem from "~/components/HeroTabsItem.astro";
+
+<Section
+  title="Start seeding in <span class='light-text'>30 seconds</span>"
+  description="No complex setup. Initialize, configure, and seed."
+>
+  <HeroTabs>
+    <HeroTabsItem
+      title="Initialize"
+      subtitle="Create your config file"
+      number={1}
+      code={`$ seedcli init
+
+✓ Created seedcli.yaml
+✓ Created .logseed/
+
+Edit seedcli.yaml to configure your database.`}
+    />
+    <HeroTabsItem
+      title="Configure"
+      subtitle="Point to your database"
+      number={2}
+      code={`# seedcli.yaml
+database:
+  adapter: postgres
+  host: localhost
+  port: 5432
+  name: myapp
+  user: postgres
+  password: secret`}
+    />
+    <HeroTabsItem
+      title="Seed"
+      subtitle="Generate intelligent data"
+      number={3}
+      code={`$ seedcli seed --all -n 100
+
+📊 Seeding Results
+──────────────────────────────────
+✅ users: 100 rows (0.45s)
+✅ products: 100 rows (0.32s)
+✅ orders: 100 rows (0.28s)
+
+✓ Seeding completed successfully!`}
+    />
+  </HeroTabs>
+</Section>
+
+<Section title="Powerful <span class='light-text'>CLI Commands</span>" description="Everything you need to manage your test data.">
+
+<Grid columns={2}>
+  <Card title="seedcli init" icon="lucide:file-plus" iconColor="#7BE1A4" size="sm">
+    Initialize a new project with seedcli.yaml configuration file.
+  </Card>
+  <Card title="seedcli seed" icon="lucide:database" iconColor="#FF8585" size="sm">
+    Seed one or more tables with intelligent fake data.
+  </Card>
+  <Card title="seedcli list" icon="lucide:list" iconColor="#FFD97B" size="sm">
+    List all tables and their relationships in your database.
+  </Card>
+  <Card title="seedcli preview" icon="lucide:eye" iconColor="#979BFF" size="sm">
+    Preview generated data without inserting into the database.
+  </Card>
+</Grid>
+
+</Section>
+
+<Section title="Ready to <span class='light-text'>get started?</span>" description="Install seedcli and start seeding your database in under a minute.">
+
+<Grid columns={2}>
+  <Card title="Get Started" icon="lucide:rocket" iconColor="#7BE1A4" size="sm">
+    Follow our [installation guide](/getting-started/installation) to get up and running in minutes.
+  </Card>
+  <Card title="View on GitHub" icon="lucide:github" iconColor="#979BFF" size="sm">
+    Check out the [source code](https://github.com/kiridharan/seedcli) and contribute to the project.
+  </Card>
+</Grid>
+
+</Section>
