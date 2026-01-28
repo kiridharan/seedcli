@@ -39,3 +39,7 @@ vendor/
 .seedfake
 
 /web/src/content/i18n
+seedcli.yaml
+
+/.logseed/
+
