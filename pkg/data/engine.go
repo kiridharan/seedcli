@@ -11,19 +11,19 @@ import (
 	"sync"
 	"time"
 
-	"github.com/brianvoe/gofakeit/v6"
+	gofakeit "github.com/brianvoe/gofakeit/v6"
 	"github.com/kiridharan/seedcli/pkg/core"
 )
 
 // Engine implements the core.DataEngine interface
 type Engine struct {
-	mu             sync.RWMutex
-	faker          *gofakeit.Faker
-	seed           int64
-	generators     map[string]core.Generator
-	validators     map[string]core.Validator
-	referenceData  map[string][]interface{} // table -> inserted PKs
-	usedValues     map[string]map[interface{}]bool
+	mu              sync.RWMutex
+	faker           *gofakeit.Faker
+	seed            int64
+	generators      map[string]core.Generator
+	validators      map[string]core.Validator
+	referenceData   map[string][]interface{} // table -> inserted PKs
+	usedValues      map[string]map[interface{}]bool
 	nullProbability float64
 }
 
@@ -31,12 +31,12 @@ type Engine struct {
 func NewEngine() *Engine {
 	seed := time.Now().UnixNano()
 	return &Engine{
-		faker:          gofakeit.New(seed),
-		seed:           seed,
-		generators:     make(map[string]core.Generator),
-		validators:     make(map[string]core.Validator),
-		referenceData:  make(map[string][]interface{}),
-		usedValues:     make(map[string]map[interface{}]bool),
+		faker:           gofakeit.New(seed),
+		seed:            seed,
+		generators:      make(map[string]core.Generator),
+		validators:      make(map[string]core.Validator),
+		referenceData:   make(map[string][]interface{}),
+		usedValues:      make(map[string]map[interface{}]bool),
 		nullProbability: 0.3,
 	}
 }
